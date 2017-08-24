@@ -1,0 +1,229 @@
+body {
+  background: #607D8B; }
+
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 2.6em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+  padding: 0.8em;
+  box-sizing: border-box; }
+
+.info {
+  width: 45vw;
+  max-width: 600px;
+  font-family: "Anton", sans-serif;
+  line-height: 1.4;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff; }
+
+section {
+  margin-bottom: 50px; }
+
+.binary-calculator, .dec-calculator {
+  display: block;
+  width: 1000px;
+  height: 270px;
+  position: relative;
+  left: 10vw;
+  margin-top: 7vh; }
+  .binary-calculator .group-number, .dec-calculator .group-number {
+    position: absolute; }
+  .binary-calculator .display-number,
+  .binary-calculator .result-bit, .dec-calculator .display-number,
+  .dec-calculator .result-bit {
+    display: block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
+    font-size: 36px; }
+  .binary-calculator .display-number, .dec-calculator .display-number {
+    cursor: pointer;
+    background: #7b96a3;
+    border-radius: 10%; }
+    .binary-calculator .display-number:hover, .dec-calculator .display-number:hover {
+      font-size: 45px; }
+  .binary-calculator .display-number__value--zero,
+  .binary-calculator .display-number__value--one, .dec-calculator .display-number__value--zero,
+  .dec-calculator .display-number__value--one {
+    display: block;
+    float: left;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px; }
+  .binary-calculator .display-number__value--zero,
+  .binary-calculator .display-number__value--one, .dec-calculator .display-number__value--zero,
+  .dec-calculator .display-number__value--one {
+    color: #fff; }
+  .binary-calculator .result-bit .display-number__value--zero,
+  .binary-calculator .result-bit .display-number__value--one, .dec-calculator .result-bit .display-number__value--zero,
+  .dec-calculator .result-bit .display-number__value--one {
+    color: #fff; }
+  .binary-calculator .operator-bar, .dec-calculator .operator-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #b2ebf2;
+    top: 205px;
+    left: 90px;
+    border-radius: 5px; }
+    .binary-calculator .operator-bar span, .dec-calculator .operator-bar span {
+      font-size: 90px;
+      position: absolute;
+      top: -140px;
+      left: 25px;
+      font-family: "Anton", sans-serif;
+      color: #b2ebf2;
+      cursor: pointer; }
+  .binary-calculator .group-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(1) {
+    right: 0px; }
+    .binary-calculator .group-number:nth-of-type(1) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(1) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(1) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(1) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(1) .result-bit, .dec-calculator .group-number:nth-of-type(1) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(2) {
+    right: 100px; }
+    .binary-calculator .group-number:nth-of-type(2) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(2) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(2) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(2) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(2) .result-bit, .dec-calculator .group-number:nth-of-type(2) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(3), .dec-calculator .group-number:nth-of-type(3) {
+    right: 200px; }
+    .binary-calculator .group-number:nth-of-type(3) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(3) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(3) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(3) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(3) .result-bit, .dec-calculator .group-number:nth-of-type(3) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(4), .dec-calculator .group-number:nth-of-type(4) {
+    right: 300px; }
+    .binary-calculator .group-number:nth-of-type(4) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(4) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(4) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(4) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(4) .result-bit, .dec-calculator .group-number:nth-of-type(4) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(5), .dec-calculator .group-number:nth-of-type(5) {
+    right: 400px; }
+    .binary-calculator .group-number:nth-of-type(5) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(5) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(5) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(5) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(5) .result-bit, .dec-calculator .group-number:nth-of-type(5) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(6), .dec-calculator .group-number:nth-of-type(6) {
+    right: 500px; }
+    .binary-calculator .group-number:nth-of-type(6) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(6) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(6) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(6) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(6) .result-bit, .dec-calculator .group-number:nth-of-type(6) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(7), .dec-calculator .group-number:nth-of-type(7) {
+    right: 600px; }
+    .binary-calculator .group-number:nth-of-type(7) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(7) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(7) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(7) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(7) .result-bit, .dec-calculator .group-number:nth-of-type(7) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(8), .dec-calculator .group-number:nth-of-type(8) {
+    right: 700px; }
+    .binary-calculator .group-number:nth-of-type(8) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(8) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(8) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(8) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(8) .result-bit, .dec-calculator .group-number:nth-of-type(8) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(9), .dec-calculator .group-number:nth-of-type(9) {
+    right: 800px; }
+    .binary-calculator .group-number:nth-of-type(9) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(9) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(9) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(9) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(9) .result-bit, .dec-calculator .group-number:nth-of-type(9) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(10), .dec-calculator .group-number:nth-of-type(10) {
+    right: 900px; }
+    .binary-calculator .group-number:nth-of-type(10) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(10) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(10) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(10) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(10) .result-bit, .dec-calculator .group-number:nth-of-type(10) .result-bit {
+      top: 210px; }
+  .binary-calculator .group-number:nth-of-type(11), .dec-calculator .group-number:nth-of-type(11) {
+    right: 1000px; }
+    .binary-calculator .group-number:nth-of-type(11) .display-number:nth-of-type(1), .dec-calculator .group-number:nth-of-type(11) .display-number:nth-of-type(1) {
+      top: 0; }
+    .binary-calculator .group-number:nth-of-type(11) .display-number:nth-of-type(2), .dec-calculator .group-number:nth-of-type(11) .display-number:nth-of-type(2) {
+      top: 100px; }
+    .binary-calculator .group-number:nth-of-type(11) .result-bit, .dec-calculator .group-number:nth-of-type(11) .result-bit {
+      top: 210px; }
+  .binary-calculator .display-17,
+  .binary-calculator .display-18, .dec-calculator .display-17,
+  .dec-calculator .display-18 {
+    visibility: hidden; }
+  .binary-calculator .result-9, .dec-calculator .result-9 {
+    border-bottom: 5px solid #7b96a3; }
+    .binary-calculator .result-9:after, .dec-calculator .result-9:after {
+      content: 'carry';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      text-align: center;
+      font-size: .5em;
+      font-family: "Anton", sans-serif;
+      width: 100%;
+      color: #fff; }
+
+.tooltip {
+  display: none; }
+
+.tooltip {
+  background: lightslategrey;
+  border: 2px solid #666666;
+  font-size: 20px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  width: 158px;
+  top: -111px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #aaa;
+  -webkit-box-shadow: 0px 0px 5px #aaa;
+  box-shadow: 0px 0px 5px #aaa; }
+
+.chatBubbleArrow {
+  border-color: lightslategrey transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: -19px;
+  left: 30px; }
+
+.chatBubbleArrowBorder {
+  border-color: #666666 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -22px;
+  left: 30px; }
+
+/*# sourceMappingURL=style.css.map */
